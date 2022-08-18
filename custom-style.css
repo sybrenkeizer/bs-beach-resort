@@ -1,0 +1,145 @@
+/* Global */
+body {
+  font-family: "Raleway", sans-serif;
+}
+.lux-txt {
+  font-family: "Aboreto", sans-serif;
+}
+hr {
+  height: 3px;
+  background-color: #000;
+  border: 0;
+  border-radius: 25px;
+  background-color: #8c4c35;
+}
+ul {
+  list-style: none;
+}
+ul:not(#social > ul, #transport > ul, #navigation ul) > li::before {
+  content: "\2022";
+  color: #8c4c35;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-size: 1.1rem;
+}
+
+/* Color */
+.beige-bg {
+  background-color: rgb(244, 236, 236);
+}
+.brown-bg {
+  background-color: #c19e88e5;
+}
+.pink-bg {
+  background-color: #d7b9ae;
+}
+.dark-red-bg {
+  background-color: #8c4c35;
+}
+.gray-bg {
+  background-color: #a49584;
+}
+.gray-bg-trans {
+  background-color: hsla(32, 15%, 58%, 0.85);
+}
+.beige-txt {
+  color: rgb(244, 236, 236);
+}
+.brown-txt {
+  color: #c19e88e5;
+}
+.pink-txt {
+  color: #d7b9ae;
+}
+.dark-red-txt {
+  color: #8c4c35;
+}
+.gray-text {
+  color: #aaaaaa;
+}
+
+/* Navigation */
+.nav-light {
+  background-color: hsla(0, 0%, 0%, 0.6);
+}
+.nav-dark {
+  background-color: hsla(0, 0%, 0%, 0.95);
+}
+
+/* Components */
+#about a:hover {
+  background-color: #8c4c35;
+  color: #fff !important;
+}
+
+#rooms a:hover {
+  background-color: #8c4c35;
+}
+
+#contact form > a:hover {
+  background-color: #8c4c35;
+}
+
+/* Animations */
+.fade {
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+}
+.fade-delay {
+  animation-delay: 2s;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Image masks */
+.img-box,
+.carousel-item {
+  position: relative;
+}
+.room-data {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 2rem;
+  background-color: hsla(32, 15%, 58%, 0.9);
+}
+.facility-data {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 7rem;
+  background-color: hsla(32, 15%, 58%, 0.9);
+}
+
+/* Accordion */
+.accordion-button:not(.collapsed) {
+  background-color: #d7b9ae !important;
+  color: #000;
+}
+
+.accordion-button:focus {
+  border: 0 !important;
+  outline: 0 !important;
+  z-index: 3;
+  box-shadow: 0 0 0 0 !important;
+}
+
+@media only screen and (max-width: 720px) {
+  #social ul {
+    border: none !important;
+  }
+}
