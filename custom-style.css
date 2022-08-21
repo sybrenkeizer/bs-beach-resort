@@ -25,9 +25,13 @@ ul:not(#social > ul, #transport > ul, #navigation ul) > li::before {
   font-size: 1.1rem;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 /* Color */
 .beige-bg {
-  background-color: rgb(244, 236, 236);
+  background-color: #f4ecec;
 }
 .brown-bg {
   background-color: #c19e88e5;
@@ -45,7 +49,7 @@ ul:not(#social > ul, #transport > ul, #navigation ul) > li::before {
   background-color: hsla(32, 15%, 58%, 0.85);
 }
 .beige-txt {
-  color: rgb(244, 236, 236);
+  color: #f4ecec;
 }
 .brown-txt {
   color: #c19e88e5;
@@ -54,7 +58,7 @@ ul:not(#social > ul, #transport > ul, #navigation ul) > li::before {
   color: #d7b9ae;
 }
 .dark-red-txt {
-  color: #8c4c35;
+  color: #6f4839;
 }
 .gray-text {
   color: #aaaaaa;
@@ -65,21 +69,80 @@ ul:not(#social > ul, #transport > ul, #navigation ul) > li::before {
   background-color: hsla(0, 0%, 0%, 0.6);
 }
 .nav-dark {
-  background-color: hsla(0, 0%, 0%, 0.95);
+  background-color: #6f4839;
 }
+nav {
+  height: 3.5rem;
+}
+
+.logo {
+  transform: scale(1.2);
+}
+
+#rooms .card {
+  box-shadow: 2px 2px 0.8rem 0rem rgb(40, 40, 40);
+  transition: 0.2s;
+}
+
+#rooms .card:hover {
+  box-shadow: 2px 2px 0.8rem 0.2rem rgb(40, 40, 40);
+}
+
+/* Contact */
+#contact i {
+  transition: .4s;
+  cursor: pointer;
+}
+
+#contact i:hover {
+  transform: scale(1.2);
+}
+
+/* Footer */
+footer li {
+  transition: 0.3s;
+  cursor: pointer;
+}
+footer li:hover {
+  transform: scale(1.04);
+}
+
 
 /* Components */
-#about a:hover {
-  background-color: #8c4c35;
-  color: #fff !important;
+nav a {
+  transition-duration: 0.5s !important;
+  transition-property: all !important;
 }
 
-#rooms a:hover {
-  background-color: #8c4c35;
+nav a:hover:not(.navbar-brand) {
+  color: #000 !important;
+  transform: scale(1.1);
 }
 
+nav a:active {
+  color: rgb(0, 0, 0) !important;
+}
+
+.active {
+  transform: scale(1.1);
+}
+
+#about a,
+#rooms a,
+#hero a,
+#contact a {
+  transition-duration: 0.5s;
+  border: 0;
+}
+
+#hero a:hover,
+#about a:hover,
+#rooms a:hover,
 #contact form > a:hover {
-  background-color: #8c4c35;
+  background-color: #8c4c35 !important;
+  color: #fff !important;
+  box-shadow: 1px 1px 0.3rem #000;
+  border: 0;
 }
 
 /* Animations */
