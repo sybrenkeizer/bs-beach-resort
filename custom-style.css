@@ -65,9 +65,6 @@ a {
 }
 
 /* Navigation */
-.nav-light {
-  background-color: hsla(0, 0%, 0%, 0.6);
-}
 .nav-dark {
   background-color: #6f4839;
 }

@@ -1,5 +1,5 @@
-const navEl = document.getElementById("navigation");
-const navToggleEL = document.querySelector(".navbar-toggler");
+// const navEl = document.getElementById("navigation");
+// const navToggleEL = document.querySelector(".navbar-toggler");
 
 // Change navbar background on scroll
 // window.addEventListener("scroll", (e) =>
